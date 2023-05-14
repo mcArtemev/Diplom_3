@@ -1,0 +1,182 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-GAODCRA",
+    "children" : [ {
+      "name" : "13324@DESKTOP-GAODCRA.main(1)",
+      "children" : [ {
+        "name" : "enterInAccountFromConstructorPageEnterInAccountButton",
+        "uid" : "ec18e3254dec259e",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069523585,
+          "stop" : 1684069527362,
+          "duration" : 3777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "enterInAccountFromNavbarPrivateCabinet",
+        "uid" : "89a20b58a27617d4",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069514790,
+          "stop" : 1684069519732,
+          "duration" : 4942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "OpenContsructorFromPrivateCabinetWithButton",
+        "uid" : "649ac48a5ee77ddc",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069531177,
+          "stop" : 1684069535075,
+          "duration" : 3898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "registrateNewUserWithIncorrectPasswordLength3",
+        "uid" : "593af0a5d267a5f1",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069551348,
+          "stop" : 1684069553396,
+          "duration" : 2048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "enterInAccountFromRestorePasswordLinkSingIn",
+        "uid" : "a8ee90c389c05f12",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069519749,
+          "stop" : 1684069523581,
+          "duration" : 3832
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "enterInAccountFromRegistrationFormLinkSingIn",
+        "uid" : "eab9da1b57f836b8",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069527363,
+          "stop" : 1684069531175,
+          "duration" : 3812
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "OpenContsructorFromPrivateCabinetWithLogo",
+        "uid" : "f14051be5c2ff928",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069539696,
+          "stop" : 1684069543649,
+          "duration" : 3953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "registrateNewUserWithCorrectData",
+        "uid" : "91bfbba3f50ef298",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069547404,
+          "stop" : 1684069551347,
+          "duration" : 3943
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "LogoutFromPrivateCabinet",
+        "uid" : "cb986cee2e9b6de1",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069535076,
+          "stop" : 1684069539693,
+          "duration" : 4617
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[2], ингредиенты: By.xpath: //h2[contains(text(),'Соусы')]]",
+        "uid" : "4fd37f63fe625bde",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069505665,
+          "stop" : 1684069510287,
+          "duration" : 4622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[3], ингредиенты: By.xpath: //h2[contains(text(),'Начинки')]]",
+        "uid" : "a617adf21287412c",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069510328,
+          "stop" : 1684069512092,
+          "duration" : 1764
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "EnterInPrivateCabinet",
+        "uid" : "95814c571232f86d",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069543651,
+          "stop" : 1684069547402,
+          "duration" : 3751
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[1], ингредиенты: By.xpath: //h2[contains(text(),'Булки')]]",
+        "uid" : "346f38b5c9214c78",
+        "parentUid" : "933df2fb87c370c3950a939047236733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684069512095,
+          "stop" : 1684069514777,
+          "duration" : 2682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "933df2fb87c370c3950a939047236733"
+    } ],
+    "uid" : "1013da0c9a7696f39ce0410be2517135"
+  } ]
+}
