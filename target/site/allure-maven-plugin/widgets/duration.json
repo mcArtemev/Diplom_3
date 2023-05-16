@@ -1,0 +1,131 @@
+[ {
+  "uid" : "eab9da1b57f836b8",
+  "name" : "enterInAccountFromRegistrationFormLinkSingIn",
+  "time" : {
+    "start" : 1684069527363,
+    "stop" : 1684069531175,
+    "duration" : 3812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91bfbba3f50ef298",
+  "name" : "registrateNewUserWithCorrectData",
+  "time" : {
+    "start" : 1684069547404,
+    "stop" : 1684069551347,
+    "duration" : 3943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95814c571232f86d",
+  "name" : "EnterInPrivateCabinet",
+  "time" : {
+    "start" : 1684069543651,
+    "stop" : 1684069547402,
+    "duration" : 3751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "649ac48a5ee77ddc",
+  "name" : "OpenContsructorFromPrivateCabinetWithButton",
+  "time" : {
+    "start" : 1684069531177,
+    "stop" : 1684069535075,
+    "duration" : 3898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fd37f63fe625bde",
+  "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[2], ингредиенты: By.xpath: //h2[contains(text(),'Соусы')]]",
+  "time" : {
+    "start" : 1684069505665,
+    "stop" : 1684069510287,
+    "duration" : 4622
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "346f38b5c9214c78",
+  "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[1], ингредиенты: By.xpath: //h2[contains(text(),'Булки')]]",
+  "time" : {
+    "start" : 1684069512095,
+    "stop" : 1684069514777,
+    "duration" : 2682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec18e3254dec259e",
+  "name" : "enterInAccountFromConstructorPageEnterInAccountButton",
+  "time" : {
+    "start" : 1684069523585,
+    "stop" : 1684069527362,
+    "duration" : 3777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb986cee2e9b6de1",
+  "name" : "LogoutFromPrivateCabinet",
+  "time" : {
+    "start" : 1684069535076,
+    "stop" : 1684069539693,
+    "duration" : 4617
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a617adf21287412c",
+  "name" : "openIngredientTabCheckIngredientSection[Для вкладки: By.xpath: //section[1]/div[1]/div[3], ингредиенты: By.xpath: //h2[contains(text(),'Начинки')]]",
+  "time" : {
+    "start" : 1684069510328,
+    "stop" : 1684069512092,
+    "duration" : 1764
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89a20b58a27617d4",
+  "name" : "enterInAccountFromNavbarPrivateCabinet",
+  "time" : {
+    "start" : 1684069514790,
+    "stop" : 1684069519732,
+    "duration" : 4942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "593af0a5d267a5f1",
+  "name" : "registrateNewUserWithIncorrectPasswordLength3",
+  "time" : {
+    "start" : 1684069551348,
+    "stop" : 1684069553396,
+    "duration" : 2048
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f14051be5c2ff928",
+  "name" : "OpenContsructorFromPrivateCabinetWithLogo",
+  "time" : {
+    "start" : 1684069539696,
+    "stop" : 1684069543649,
+    "duration" : 3953
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8ee90c389c05f12",
+  "name" : "enterInAccountFromRestorePasswordLinkSingIn",
+  "time" : {
+    "start" : 1684069519749,
+    "stop" : 1684069523581,
+    "duration" : 3832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
