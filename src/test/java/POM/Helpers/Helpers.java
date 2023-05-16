@@ -9,7 +9,4 @@ public class Helpers {
     public void waitElementDisplayed(WebDriver driver, int timeToWait, By targetElement){
         new WebDriverWait(driver, timeToWait).until(d -> (driver.findElement(targetElement).isDisplayed()));
     }
-    public void waitElementToBeVisible(WebDriver driver, int timeToWait, By targetElement){
-        new WebDriverWait(driver, timeToWait).until(ExpectedConditions.visibilityOfElementLocated(targetElement));
-    }
 }

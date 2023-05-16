@@ -3,6 +3,7 @@ import POM.Helpers.APICalls;
 import POM.Helpers.Helpers;
 import POM.Helpers.UserSerializer;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class PrivateCabinetTests extends TestFixtures {
@@ -13,12 +14,12 @@ public class PrivateCabinetTests extends TestFixtures {
     Helpers helpers = new Helpers();
     CabinetElements cabinetElements = new CabinetElements(driver);
 
-
-    @Test
-    public void EnterInPrivateCabinet() {
+    @Before
+    public void testData(){
         name = "example";
         email = "example@example.com";
         password = "123456";
+
         apiCalls.createUser(new UserSerializer(name, email, password));
         isUserCreated = apiCalls.checkCreatedUser(new UserSerializer(email, password));
 
@@ -26,6 +27,9 @@ public class PrivateCabinetTests extends TestFixtures {
         loginFormElements.completeLoginForm(email, password);
         loginFormElements.clickLoginButton();
         navbarElements.clickCabinetButton();
+    }
+    @Test
+    public void EnterInPrivateCabinet() {
         helpers.waitElementDisplayed(driver, 5, cabinetElements.getCabinetData());
         Assert.assertTrue(cabinetElements.getUserName().equals(name));
         Assert.assertTrue(cabinetElements.getUserLogin().equals(email));
@@ -34,16 +38,6 @@ public class PrivateCabinetTests extends TestFixtures {
 
     @Test
     public void LogoutFromPrivateCabinet() {
-        name = "example";
-        email = "example@example.com";
-        password = "123456";
-        apiCalls.createUser(new UserSerializer(name, email, password));
-        isUserCreated = apiCalls.checkCreatedUser(new UserSerializer(email, password));
-
-        navbarElements.clickCabinetButton();
-        loginFormElements.completeLoginForm(email, password);
-        loginFormElements.clickLoginButton();
-        navbarElements.clickCabinetButton();
         helpers.waitElementDisplayed(driver, 5, cabinetElements.getCabinetData());
         cabinetElements.clickLogoutButton();
         helpers.waitElementDisplayed(driver, 5, loginFormElements.getLoginForm());
@@ -52,34 +46,14 @@ public class PrivateCabinetTests extends TestFixtures {
     }
 
     @Test
-    public void OpenContsructorFromPrivateCabinetWithButton() {
-        name = "example";
-        email = "example@example.com";
-        password = "123456";
-        apiCalls.createUser(new UserSerializer(name, email, password));
-        isUserCreated = apiCalls.checkCreatedUser(new UserSerializer(email, password));
-
-        navbarElements.clickCabinetButton();
-        loginFormElements.completeLoginForm(email, password);
-        loginFormElements.clickLoginButton();
-        navbarElements.clickCabinetButton();
+    public void OpenConstructorFromPrivateCabinetWithButton() {
         helpers.waitElementDisplayed(driver, 5, cabinetElements.getCabinetData());
         navbarElements.clickConstructorButton();
         Assert.assertTrue(driver.findElement(constructorElements.getConstructorContainer()).isDisplayed());
     }
 
     @Test
-    public void OpenContsructorFromPrivateCabinetWithLogo() {
-        name = "example";
-        email = "example@example.com";
-        password = "123456";
-        apiCalls.createUser(new UserSerializer(name, email, password));
-        isUserCreated = apiCalls.checkCreatedUser(new UserSerializer(email, password));
-
-        navbarElements.clickCabinetButton();
-        loginFormElements.completeLoginForm(email, password);
-        loginFormElements.clickLoginButton();
-        navbarElements.clickCabinetButton();
+    public void OpenConstructorFromPrivateCabinetWithLogo() {
         helpers.waitElementDisplayed(driver, 5, cabinetElements.getCabinetData());
         navbarElements.clickLogo();
         Assert.assertTrue(driver.findElement(constructorElements.getConstructorContainer()).isDisplayed());

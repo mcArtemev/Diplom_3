@@ -5,7 +5,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class RegistrationFormElements extends TestFixtures{
-    private By registrationForm = By.xpath("//div[contains(@class,'Auth_login')]//h2[contains(text(),'Регистрация')]");
     private By nameInput = By.xpath("//fieldset[1]/div/div/input");
     private By emailInput = By.xpath("//fieldset[2]/div/div/input");
     private By passwordInput = By.name("Пароль");
@@ -14,10 +13,6 @@ public class RegistrationFormElements extends TestFixtures{
     private By errorMessage = By.xpath("//p[contains(@class,'input__error')]");
     public RegistrationFormElements(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public By getRegistrationForm() {
-        return registrationForm;
     }
 
     public void completeRegistrationForm(String name, String email, String password){

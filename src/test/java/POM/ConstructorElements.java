@@ -10,9 +10,6 @@ public class ConstructorElements extends TestFixtures {
     private By bunsTab = By.xpath("//section[1]/div[1]/div[1]");
     private By saucesTab = By.xpath("//section[1]/div[1]/div[2]");
     private By fillingsTab = By.xpath("//section[1]/div[1]/div[3]");
-    private By bunsSection = By.xpath("//h2[contains(text(),'Булки')]");
-    private By saucesSection = By.xpath("//h2[contains(text(),'Соусы')]");
-    private By fillingsSection = By.xpath("//h2[contains(text(),'Начинки')]");
 
     public ConstructorElements(WebDriver driver) {
         this.driver = driver;
@@ -30,18 +27,6 @@ public class ConstructorElements extends TestFixtures {
         return fillingsTab;
     }
 
-
-    public By getBunsSection() {
-        return bunsSection;
-    }
-
-    public By getSaucesSection() {
-        return saucesSection;
-    }
-
-    public By getFillingsSection() {
-        return fillingsSection;
-    }
     public void clickTab(By tab){
         driver.findElement(tab).click();
     }

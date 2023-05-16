@@ -39,6 +39,7 @@ public class APICalls extends BaseData {
         return response;
     }
 
+    // TODO: Убрать equals и сделать условие с return false|true 
     public boolean checkCreatedUser(UserSerializer userJsonData) {
         Response response = loginUser(userJsonData);
         await().atMost(10, TimeUnit.SECONDS)

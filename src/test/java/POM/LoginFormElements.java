@@ -13,7 +13,6 @@ public class LoginFormElements extends TestFixtures{
     private By restorePasswordLink = By.xpath("//a[contains(text(),'Восстановить пароль')]");
     private By errorMessage = By.xpath("//p[contains(@class,'input__error')]");
 
-    private String errorText;
     public LoginFormElements(WebDriver driver) {
         this.driver = driver;
     }

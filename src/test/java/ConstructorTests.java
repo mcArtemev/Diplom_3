@@ -1,41 +1,39 @@
 import POM.ConstructorElements;
-import POM.Helpers.Helpers;
 import POM.TestFixtures;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
 
 @RunWith(Parameterized.class)
 public class ConstructorTests extends TestFixtures {
     static ConstructorElements constructorElements = new ConstructorElements(driver);
-    Helpers helpers = new Helpers();
     private By ingredientTab;
-    private By ingredientHeader;
 
-    public ConstructorTests(By ingredientTab, By ingredientHeader) {
+
+    public ConstructorTests(By ingredientTab) {
         this.ingredientTab=ingredientTab;
-        this.ingredientHeader=ingredientHeader;
     }
 
     @Parameterized.Parameters(name = "Для вкладки: {0}, ингредиенты: {1}")
     public static Object[][] openTabExpectHeader(){
         return new Object[][] {
-                {constructorElements.getSaucesTab(),constructorElements.getSaucesSection()},
-                {constructorElements.getFillingsTab(),constructorElements.getFillingsSection()},
-                {constructorElements.getBunsTab(),constructorElements.getBunsSection()},
+                {constructorElements.getBunsTab()},
+                {constructorElements.getFillingsTab()},
+                {constructorElements.getSaucesTab()},
+
         };
     }
     @Test
     public void openIngredientTabCheckIngredientSection(){
-        try {
+        String classAttribute = driver.findElement(ingredientTab).getAttribute("class");
+        // Так как по дефолту вкл "Булки" активна, но при попытке click() на нее падает ошибка
+        // Поменял try catch на проверку наличия у класса current
+        // Придется проверять клик по вкладке только по изменению класса вкладки
+        if(!classAttribute.contains("current")) {
             constructorElements.clickTab(ingredientTab);
-            helpers.waitElementToBeVisible(driver, 2, ingredientHeader);
-            Assert.assertTrue(driver.findElement(ingredientHeader).isDisplayed());
-        } catch (ElementClickInterceptedException e) {
-            Assert.assertTrue(driver.findElement(ingredientHeader).isDisplayed());
         }
+        Assert.assertTrue(driver.findElement(ingredientTab).getAttribute("class").contains("current"));
     }
 }

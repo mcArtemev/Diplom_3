@@ -27,6 +27,7 @@ public class TestFixtures {
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("disable-gpu");
+
         driver = new ChromeDriver(chromeOptions);
         driver.get(BaseData.baseURI);
     }
